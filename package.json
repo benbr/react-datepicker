@@ -13,7 +13,7 @@
   "keywords": ["react", "datepicker", "calendar", "date", "react-component"],
   "repository": {
     "type": "git",
-    "url": "git://github.com/Hacker0x01/react-datepicker.git"
+    "url": "git://github.com/benbr/react-datepicker.git"
   },
   "bugs": {
     "url": "https://github.com/Hacker0x01/react-datepicker/issues"
