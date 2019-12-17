@@ -194,7 +194,7 @@ export default class Day extends React.Component {
         role="option"
       >
         {!!this.props.dayFormat
-          ? this.props.dayFormat(getDate(this.props.day))
+          ? this.props.dayFormat(this.props.day)
           : getDate(this.props.day)}
       </div>
     );
