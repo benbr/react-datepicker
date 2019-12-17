@@ -99,6 +99,7 @@ export default class Month extends React.Component {
           dayClassName={this.props.dayClassName}
           utcOffset={this.props.utcOffset}
           disabledKeyboardNavigation={this.props.disabledKeyboardNavigation}
+          dayFormat={this.props.dayFormat}
         />
       );
 

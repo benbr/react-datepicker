@@ -11,6 +11,7 @@ import {
   isDayInRange,
   getDayOfWeekCode
 } from "./date_utils";
+import Month from "./month";
 
 export default class Day extends React.Component {
   static propTypes = {
@@ -192,7 +193,9 @@ export default class Day extends React.Component {
         aria-label={`day-${getDate(this.props.day)}`}
         role="option"
       >
-        {getDate(this.props.day)}
+        {!!this.props.dayFormat
+          ? this.props.dayFormat(getDate(this.props.day))
+          : getDate(this.props.day)}
       </div>
     );
   }

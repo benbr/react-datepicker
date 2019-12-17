@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import Day from "./day";
 import WeekNumber from "./week_number";
 import * as utils from "./date_utils";
+import Month from "./month";
 
 export default class Week extends React.Component {
   static propTypes = {
@@ -96,6 +97,7 @@ export default class Week extends React.Component {
             dayClassName={this.props.dayClassName}
             utcOffset={this.props.utcOffset}
             disabledKeyboardNavigation={this.props.disabledKeyboardNavigation}
+            dayFormat={this.props.dayFormat}
           />
         );
       })

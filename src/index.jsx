@@ -82,6 +82,7 @@ export default class DatePicker extends React.Component {
     dateFormat: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
     dateFormatCalendar: PropTypes.string,
     dayClassName: PropTypes.func,
+    dayFormat: PropTypes.func,
     disabled: PropTypes.bool,
     disabledKeyboardNavigation: PropTypes.bool,
     dropdownMode: PropTypes.oneOf(["scroll", "select"]).isRequired,
@@ -547,6 +548,7 @@ export default class DatePicker extends React.Component {
     if (!this.props.inline && !this.isCalendarOpen()) {
       return null;
     }
+
     return (
       <WrappedCalendar
         ref={elem => {
@@ -616,6 +618,7 @@ export default class DatePicker extends React.Component {
         nextMonthButtonLabel={this.props.nextMonthButtonLabel}
         disabledKeyboardNavigation={this.props.disabledKeyboardNavigation}
         renderCustomHeader={this.props.renderCustomHeader}
+        dayFormat={this.props.dayFormat}
       >
         {this.props.children}
       </WrappedCalendar>
